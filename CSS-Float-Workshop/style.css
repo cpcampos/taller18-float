@@ -1,0 +1,37 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  font: .9em/1.2 Arial, Helvetica, sans-serif
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: rgb(207,232,220);
+  padding: 1em;
+  float: left;
+  margin: 10px;
+}
+.special{
+  background-color: tomato;
+  padding: 10px;
+  color: #fff;
+}
+.cleared{
+  /* clear: left;    --este no funciona */
+}
+.wrapper{
+  background-color: lightgreen;
+  padding: 10px;
+  color: #fff;
+  display: flow-root;/*solucion para que e wrapper abarque el elemento flotante sin que aparezcan scrolls y  y sin necesiad de usuar la seudoclase con el wraper after */
+ /*overflow: auto; 
+ height: 100px; funciona pero hace que aparezcan scrolls*/
+}
+/*.wrapper::after{
+  content: "";
+  clear: both;
+  display: block;
+}apunta a un seudo elemento que esta despues del wrapper*/
